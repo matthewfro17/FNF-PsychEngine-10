@@ -321,56 +321,6 @@ class Note extends FlxSprite
 		var skin:String = texture;
 		switch (skin)
 		{
-			default:
-				frames = Paths.getSparrowAtlas('notes/NOTE_assets', 'shared');
-
-				animation.addByPrefix('greenScroll', 'green0');
-				animation.addByPrefix('redScroll', 'red0');
-				animation.addByPrefix('blueScroll', 'blue0');
-				animation.addByPrefix('purpleScroll', 'purple0');
-				animation.addByPrefix('whiteScroll', 'white0');
-				animation.addByPrefix('yellowScroll', 'yellow0');
-				animation.addByPrefix('violetScroll', 'violet0');
-				animation.addByPrefix('blackScroll', 'black0');
-				animation.addByPrefix('darkScroll', 'dark0');
-				animation.addByPrefix('pinkScroll', 'pink0');
-				animation.addByPrefix('turqScroll', 'turq0');
-				animation.addByPrefix('emeraldScroll', 'emerald0');
-				animation.addByPrefix('lightredScroll', 'lightred0');
-
-
-				animation.addByPrefix('purpleholdend', 'pruple end hold');
-				animation.addByPrefix('greenholdend', 'green hold end');
-				animation.addByPrefix('redholdend', 'red hold end');
-				animation.addByPrefix('blueholdend', 'blue hold end');
-				animation.addByPrefix('whiteholdend', 'white hold end');
-				animation.addByPrefix('yellowholdend', 'yellow hold end');
-				animation.addByPrefix('violetholdend', 'violet hold end');
-				animation.addByPrefix('blackholdend', 'black hold end');
-				animation.addByPrefix('darkholdend', 'dark hold end');
-				animation.addByPrefix('pinkholdend', 'pink hold end');
-				animation.addByPrefix('turqholdend', 'turq hold end');
-				animation.addByPrefix('emeraldholdend', 'emerald hold end');
-				animation.addByPrefix('lightredholdend', 'lightred hold end');
-
-				animation.addByPrefix('purplehold', 'purple hold piece');
-				animation.addByPrefix('greenhold', 'green hold piece');
-				animation.addByPrefix('redhold', 'red hold piece');
-				animation.addByPrefix('bluehold', 'blue hold piece');
-				animation.addByPrefix('whitehold', 'white hold piece');
-				animation.addByPrefix('yellowhold', 'yellow hold piece');
-				animation.addByPrefix('violethold', 'violet hold piece');
-				animation.addByPrefix('blackhold', 'black hold piece');
-				animation.addByPrefix('darkhold', 'dark hold piece');
-				animation.addByPrefix('pinkhold', 'pink hold piece');
-				animation.addByPrefix('turqhold', 'turq hold piece');
-				animation.addByPrefix('emeraldhold', 'emerald hold piece');
-				animation.addByPrefix('lightredhold', 'lightred hold piece');
-	
-				setGraphicSize(Std.int(width * noteSize));
-				updateHitbox();
-				antialiasing = noteStyle != '3D';
-			
 			case 'shape':
 				frames = Paths.getSparrowAtlas('notes/NOTE_assets_Shape', 'shared');
 
