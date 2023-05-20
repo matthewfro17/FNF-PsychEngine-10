@@ -403,14 +403,8 @@ class Note extends FlxSprite
 				updateHitbox();
 				antialiasing = true;
 			case 'phone' | 'phone-alt' | 'phone-zardy':
-				if (!isSustainNote)
-				{
-					frames = Paths.getSparrowAtlas('notes/NOTE_phone', 'shared');
-				}
-				else
-				{
-					frames = Paths.getSparrowAtlas('notes/NOTE_assets', 'shared');
-				}
+				frames = Paths.getSparrowAtlas('notes/NOTE_phone', 'shared');
+				
 				animation.addByPrefix('greenScroll', 'green0');
 				animation.addByPrefix('redScroll', 'red0');
 				animation.addByPrefix('blueScroll', 'blue0');
